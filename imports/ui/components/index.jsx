@@ -10,7 +10,7 @@ import scrollTo from 'jquery.scrollto'
 
 const Index = React.createClass({
 	handleScroll() {
-		$(window).scrollTo(document.getElementById('cards'), 800);
+		$.scrollTo(document.getElementById('cards'), 800);
 	},
 
 	render() {
@@ -26,9 +26,9 @@ const Index = React.createClass({
 			          </div>
 			      </section>
 
-				
+				<div id="card">
 					<FoodListComposer />
-					
+				</div>	
 					<CookersComposer />
 					<Footer />	
 				</div>	
