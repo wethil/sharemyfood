@@ -20,8 +20,8 @@ const Index = React.createClass({
 			          <div className="ui center aligned grid">
 			              <div className="ten wide  column pageCenter ">
 			                  <img src="logo.png" alt="Yemeğini Paylaş" className="ui medium centered image" />
-			                  <h2 className="ui white header"  >İstediğiniz yemeği sipariş edin.</h2>
-			                  <button onClick={this.handleScroll} className="ui primary button ">Yemeklere göz atın</button>
+			                  <h2 className="ui white header"  >Komşuda pişer, bize de düşer.</h2>
+			                  <h4 className="ui white header"> Aşağıya inip yemek seçin. </h4>		
 			              </div>
 			          </div>
 			      </section>
