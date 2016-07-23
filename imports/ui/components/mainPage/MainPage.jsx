@@ -3,7 +3,7 @@ import React from 'react';
  const MainPage = React.createClass({
 	render() {
 		return (
-				 <section className="mSection" >  
+ <section className="mSection" >  
       
           <div className="ui center aligned grid">
              

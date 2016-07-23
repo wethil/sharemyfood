@@ -36,9 +36,8 @@ import React from 'react';
 		  }
 
 		return (
-			<div>
-				{foods}
-
+			<div className="ui container  stackable grid" id="cards">  	
+					{foods}
 			</div>
 				
 		);

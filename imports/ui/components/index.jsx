@@ -4,6 +4,7 @@ import FoodCards from './foodCards/FoodCards.jsx'
 import MainPage from './mainPage/MainPage.jsx'
 import Footer from './Footer.jsx'
 import {CookersComposer} from '../composers/CookersComposer.jsx'
+import {FoodListComposer} from '../composers/FoodListComposer.jsx'
 import scrollTo from 'jquery.scrollto'
 
 
@@ -25,9 +26,9 @@ const Index = React.createClass({
 			          </div>
 			      </section>
 
-				<div className="ui container  stackable grid" id="cards">  	
-					<FoodCards />
-				</div>	
+				
+					<FoodListComposer />
+					
 					<CookersComposer />
 					<Footer />	
 				</div>	
