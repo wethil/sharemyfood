@@ -5,8 +5,7 @@
     "start": "meteor run"
   },
   "dependencies": {
-    "fullpage.js": "^2.8.2",
-    "jquery.scrollto": "^2.1.2",
+    "fbemitter": "^2.0.2",
     "material-ui": "^0.15.2",
     "meteor-node-stubs": "~0.2.0",
     "react": "^15.1.0",
