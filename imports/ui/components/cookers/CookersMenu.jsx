@@ -37,7 +37,7 @@ const CookersMenu = React.createClass({
 		  }
 
 		return (
-			<div  className="ui grid">
+			<div  className="ui grid" style={{marginRight:0}} >
 					  <div  className="three wide column" style={{marginTop:27}} >
 					   
 					  <div  className="ui  vertical pointing menu">
