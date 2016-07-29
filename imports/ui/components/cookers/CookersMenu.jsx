@@ -63,11 +63,10 @@ const CookersMenu = React.createClass({
 					<div className="ui divider"></div>
 					<div className="ui info message">
 					  <div className="header">
-					    Sipariş : 0533 333 33 33
-					  </div>
+					    Sipariş : 0507 048 9706					  </div>
 					  <ul className="list">
 					    <li>Bütün yemekler 8 liradır.</li>
-					    <li>Bütün içecekler 3 liradır.</li>
+					    <li>Bütün içecekler 1,5 liradır.</li>
 					  </ul>
 					</div>  
 			</div>
