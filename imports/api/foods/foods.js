@@ -26,11 +26,19 @@ Foods.attachSchema(
     },
     cookerId:{
     	type:String,
-    	optional:false
+    	optional:true
     },
     orderQuantity :{
     	type:Number,
     	defaultValue:0
+    },
+    foodDay : {
+        type:String,
+        defaultValue:"Pazartesi"
+    },
+    foodType: {
+        type:String,
+        defaultValue:"food"
     }
   })
 );

@@ -4,13 +4,15 @@ import Foods from '../../api/foods/foods.js'
 import CardList from '../components/foodCards/CardList.jsx'
 
 const composer = (props,onData) => {
-	cookerId=props.cookerId
-	const subscription = Meteor.subscribe('allFoods')
+	activeCooker=props.cookerId
+	queryType=props.queryType
+	foodType=props.foodType
+	const subscription = Meteor.subscribe('allFoods',queryType,activeCooker,foodType)
 
 
 	if (subscription.ready()) {
 		
-		const foods = Foods.find({cookerId:cookerId}).fetch()
+		const foods = Foods.find().fetch()
 	
 		onData(null,{foods})
 	}

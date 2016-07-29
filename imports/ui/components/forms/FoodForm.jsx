@@ -7,8 +7,10 @@ import { Meteor } from 'meteor/meteor';
  		foodName = this.refs.foodName.value.trim();
  		desc = this.refs.desc.value.trim()
  		photo = this.refs.photo.value.trim()
- 		cooker= this.refs.cookerId.value.trim()
- 		Meteor.call('addFood', foodName,desc,photo,cooker, error => {
+ 		cooker = this.refs.cookerId.value.trim()
+ 		foodDay =this.refs.day.value.trim()
+ 		foodType = this.refs.foodType.value.trim()
+ 		Meteor.call('addFood', foodName,desc,photo,cooker,foodDay,foodType, error => {
             if (error) {
                 console.log('error', error);
             } else {
@@ -16,6 +18,7 @@ import { Meteor } from 'meteor/meteor';
             	this.refs.foodName.value="";
             	this.refs.desc.value="";
             	this.refs.photo.value="";
+            
 
             } 
              
@@ -37,6 +40,20 @@ import { Meteor } from 'meteor/meteor';
 				    	name="desc" 
 				    	placeholder="Yemek Açıklaması"
 				    	ref="desc" />
+				  </div>
+				    <div className="field">  
+				    <input 
+				    	type="text" 
+				    	name="day" 
+				    	placeholder="Yemek Günü"
+				    	ref="day" />
+				  </div>
+				    <div className="field">  
+				    <input 
+				    	type="text" 
+				    	name="tür" 
+				    	placeholder="Yemek türü"
+				    	ref="foodType" />
 				  </div>
 				  <div className="field">
 				    <input 
