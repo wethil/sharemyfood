@@ -19,10 +19,12 @@ Foods.attachSchema(
       type: String
     },
     foodDesc: {
-      type: String
+      type: String,
+      optional:true
     },
     photo:{
-      type:String
+      type:String,
+      optional:true
     },
     cookerId:{
     	type:String,

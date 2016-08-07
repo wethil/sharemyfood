@@ -5,7 +5,9 @@ import MainPage from './mainPage/MainPage.jsx'
 import Footer from './Footer.jsx'
 import {CookersComposer} from '../composers/CookersComposer.jsx'
 import {CookersMenuComposer} from '../composers/CookersMenuComposer.jsx'
+import {WeeklyMenuCookersComp} from '../composers/WeeklyMenuCookersComp.jsx'
 import FoodList from './foodCards/FoodList.jsx'
+import Menus from './menus/Menus.jsx'
 
 const Index = React.createClass({
 	
@@ -23,23 +25,7 @@ const Index = React.createClass({
 			          <div className="ui center aligned grid">
 			              <div className="sixteen wide  column pageCenter ">
 			              <h1  id="firstHead" className="ui white header">Bizde pişer size de düşer.</h1>
-			                		<div className="ui three column equal width grid">
-										  <div className="column middleMenu ">
-										    <div className="ui segment">
-										      <img className="ui fluid image" src="http://res.cloudinary.com/dmboea9te/image/upload/v1469961917/Hamide_Mutfagi_akdvll.jpg" />
-										    </div>
-										  </div>
-										  <div className="column middleMenu">
-										    <div className="ui segment">
-										     <img className="ui fluid image" src="http://res.cloudinary.com/dmboea9te/image/upload/v1469961917/Deniz_mutfak_grhtxf.jpg" />
-										    </div>
-										  </div>
-										  <div className="column middleMenu">
-										    <div className="ui segment">
-										      <img className="ui fluid image" src="http://res.cloudinary.com/dmboea9te/image/upload/v1469961917/Yasemin_mutfak_ilg9t4.jpg" />
-										    </div>
-										  </div>
-										</div>
+										 <WeeklyMenuCookersComp />
 
 								<div className="ui grid">
 										<div className="ui five wide column">
