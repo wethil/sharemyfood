@@ -7,7 +7,7 @@ const composer = (props,onData) => {
 	const subscription = Meteor.subscribe('allCookers')
 	if (subscription.ready()) {
 		
-		const cookers = Cookers.find().fetch()
+		const cookers = Cookers.find({fullName: "Deniz'in Menüsü"}).fetch()
 	
 		onData(null,{cookers})
 	}

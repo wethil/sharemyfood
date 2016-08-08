@@ -1,3 +1,7 @@
+
+@import url(https://fonts.googleapis.com/css?family=Indie+Flower|Oleo+Script);
+@import url(https://fonts.googleapis.com/css?family=Marck+Script);
+
 * {
   box-sizing: border-box;
 }
@@ -95,8 +99,20 @@ footer a {
 
 #firstHead {
   font-size: 4rem !important;
+  font-family: 'Marck Script', cursive;
+  margin-top: 3px !important;
 }
 
 .middleMenu {
   width: 32% !important;
+}
+
+
+.menuDay{
+
+font-family: 'Oleo Script', cursive;
+}
+
+.menuFood {
+  font-family: 'Indie Flower', cursive;
 }

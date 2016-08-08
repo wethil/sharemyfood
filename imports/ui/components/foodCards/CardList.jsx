@@ -10,7 +10,9 @@ import React from 'react';
 		 if ( this.props.foods && this.props.foods.length > 0 ) {
 		    	var foods = []
 		     this.props.foods.forEach( ( food ) =>  {
-		      foods.push( <div  className='four wide column animated fadeIn ' key={ food._id }  >  
+
+		      if (food.photo) {
+		      	foods.push( <div  className='four wide column animated fadeIn ' key={ food._id }  >  
 			<div className="ui card">
 						  <div className="image">
 						   <div className="ui blue ribbon label">
@@ -29,6 +31,9 @@ import React from 'react';
 				     </div> 
 
 		         ) ;
+		      } 
+		   
+
 		    });
 		  } else {
 		    foods =  <p>No list items yet!</p> ;

@@ -1,17 +1,29 @@
 import React from 'react';
+import FoodList from './FoodList.jsx'
+import {WMFoodListComp} from '../../composers/WMFoodListComp.jsx'
 
 const Menus = React.createClass({
 	render() {
 
+		
+
+
 		  if ( this.props.cookers && this.props.cookers.length > 0 ) {
 		    	var menus = []
 		     this.props.cookers.forEach( ( cooker ) =>  {
+		     	if (this.props.cookers.length==1) {
+		     		exColumns =<div className="column middleMenu "></div>	
+								
+		     	} else {
+		     		exColumns =""
+		     	}
 		     	
 		      menus.push( 
 					<div className="column middleMenu ">
 						<div className="ui raised segment">
 							<h4 className="ui header"> {cooker.fullName} </h4>
-							<p>Te eum doming eirmod, nominati pertinacia argumentum ad his. Ex eam alia facete scriptorem, est autem aliquip detraxit at. Usu ocurreret referrentur at, cu epicurei appellantur vix. Cum ea laoreet recteque electram, eos choro alterum definiebas in. Vim dolorum definiebas an. Mei ex natum rebum iisque.</p>
+							<WMFoodListComp 
+								cookerId={cooker._id}/>
 						</div>
 					</div>	
 		         ) ;
@@ -24,7 +36,9 @@ const Menus = React.createClass({
 
 		return (
 			<div className="ui three column equal width grid">
+			{exColumns}
 				 {menus}
+			{exColumns}
 		</div>
 		);
 	}

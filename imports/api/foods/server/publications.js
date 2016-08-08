@@ -9,9 +9,18 @@ Meteor.publish("allFoods",function(queryType,activeCooker,foodType){
       break;
     case 1:
           return Foods.find({foodType:foodType})
-        
+       break ;
+      case 2:
+      	  return Foods.find({foodType:foodType, cookerId:activeCooker})  
+      	break ;  
     default:
          return  Foods.find()
   }
+
+})
+
+Meteor.publish("menuFoodList",function(activeCooker,foodType){
+
+      	  return Foods.find({foodType:foodType, cookerId:activeCooker})  
 
 })
