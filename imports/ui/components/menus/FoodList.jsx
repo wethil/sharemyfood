@@ -25,7 +25,7 @@ const FoodList = React.createClass({
 				 }
 
 		      foodList.push( 
-					<div style={{marginTop:2}} className="className">
+					<div style={{marginTop:5, marginBottom:5}} className="className">
 					{todayLabel}
 						<span className="menuDay"> {weekday[day]} </span> | 
 						<span className="menuFood"> {food.foodName} </span>

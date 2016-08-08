@@ -1,8 +1,15 @@
 import React from 'react';
 import FoodList from './FoodList.jsx'
 import {WMFoodListComp} from '../../composers/WMFoodListComp.jsx'
+import emitter from '../Emitter.jsx'
+import {InfoCard1} from '../accesories/InfoCards'
+import {InfoCard2} from '../accesories/InfoCards'
 
 const Menus = React.createClass({
+	handlePush() {
+		console.log('push')
+		emitter.emit('scroll')
+	},
 	render() {
 
 		
@@ -19,11 +26,18 @@ const Menus = React.createClass({
 		     	}
 		     	
 		      menus.push( 
-					<div className="column middleMenu ">
-						<div className="ui raised segment">
-							<h4 className="ui header"> {cooker.fullName} </h4>
-							<WMFoodListComp 
-								cookerId={cooker._id}/>
+					<div className="ui eight wide column  ">
+						<div className="ui segments">
+								<div style={{fontSize:19}} className="ui raised segment">
+
+									<h4 className="ui header menuHead"> {cooker.fullName} </h4>
+									<WMFoodListComp 
+										cookerId={cooker._id}/>
+								
+							</div>
+							<div className="ui secondary segment">
+							    <button className="ui fluid primary button" onClick={this.handlePush} > Diğer Yemeklere Göz Atın </button>	
+							 </div>
 						</div>
 					</div>	
 		         ) ;
@@ -35,10 +49,14 @@ const Menus = React.createClass({
 
 
 		return (
-			<div className="ui three column equal width grid">
-			{exColumns}
+			<div className="ui two column  grid">
+				<div className="ui five wide column">
+					<InfoCard1 />
+					<InfoCard2 />
+				</div>
+				
 				 {menus}
-			{exColumns}
+			
 		</div>
 		);
 	}
