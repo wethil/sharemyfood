@@ -26,7 +26,7 @@ const Menus = React.createClass({
 		     	}
 		     	
 		      menus.push( 
-					<div className="ui eight wide column  ">
+					<div className="ui seven wide column  ">
 						<div className="ui segments">
 								<div style={{fontSize:19}} className="ui raised segment">
 
@@ -49,13 +49,29 @@ const Menus = React.createClass({
 
 
 		return (
-			<div className="ui two column  grid">
+			<div className="ui four column  grid">
 				<div className="ui five wide column">
 					<InfoCard1 />
 					<InfoCard2 />
 				</div>
-				
+
 				 {menus}
+				 <div className="ui four wide column">
+				 		<div className="ui card">
+						  <div className="image">
+						    <img src="http://res.cloudinary.com/dmboea9te/image/upload/v1470677034/ea319d3d-0b92-49c0-906d-3ea4ab420c6a_vszsw5.jpg" />
+						  </div>
+						  <div className="content">
+						    <a className="header">Dolma</a>
+						    <div className="meta">
+						      <span className="date"> Patlıcan Dolması</span>
+						    </div>
+						    <div className="description">
+						      Dolmayı bir de yaseminden deneyin!
+						    </div>
+						  </div>
+						</div>
+				 </div>
 			
 		</div>
 		);
@@ -67,3 +83,5 @@ const Menus = React.createClass({
 	 									
 										   
 									
+
+
