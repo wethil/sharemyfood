@@ -57,20 +57,21 @@ const Menus = React.createClass({
 
 				 {menus}
 				 <div className="ui four wide column">
-				 		<div className="ui card">
+				 	<div className="ui card">
 						  <div className="image">
-						    <img src="http://res.cloudinary.com/dmboea9te/image/upload/v1470677034/ea319d3d-0b92-49c0-906d-3ea4ab420c6a_vszsw5.jpg" />
+						    <img src="http://res.cloudinary.com/dmboea9te/image/upload/v1469288759/deniz.mant%C4%B1_pgunx1.jpg" />
 						  </div>
 						  <div className="content">
-						    <a className="header">Dolma</a>
+						    <a className="header">Mantı</a>
 						    <div className="meta">
-						      <span className="date"> Patlıcan Dolması</span>
+						      <span className="date"> Ev yapımı kayseri mantısı</span>
 						    </div>
 						    <div className="description">
-						      Dolmayı bir de yaseminden deneyin!
+						     Yanında Tatlı ile beraber
 						    </div>
 						  </div>
 						</div>
+				 		
 				 </div>
 			
 		</div>
