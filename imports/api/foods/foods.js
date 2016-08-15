@@ -7,6 +7,7 @@ Foods = new Mongo.Collection('foods',{
         },{fields:{
             'inf' :0
         }})
+     
         return doc
 
     }
